@@ -64,9 +64,6 @@ df2 = df2[~df2.index.isin(exist)]
 for j in df2.index:
     savefile = str(pth + "dwn/" + str(j) + '.pdf')
     try:
-        urllib.request.urlretrieve(df2.at[j,'Pdf_URL'], savefile)
-        #if os.path.isfile(savefile):
-            #try:
                 #pdfFileObj = open(savefile, 'rb')
                # creating a pdf reader object
                 #pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
